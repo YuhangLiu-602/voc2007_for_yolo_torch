@@ -10,25 +10,25 @@ from tools.make_for_yolov3_torch import make_for_torch_yolov3
 if __name__ == "__main__":
     ###############################################################################
     # 0. 参数设置
-    jpegimages_dir = r".\JPEGImages"  # 图片保存位置
-    annotations_dir = r".\Annotations"  # 标注文件保存位置
+    jpegimages_dir = r".\JPEGImages"  # 图片保存位置（要改）
+    annotations_dir = r".\Annotations"  # 标注文件保存位置（要改）
 
     # 分为3份：train,val,test
     trainval_percent = 0.8  # (train+val)/(train+val+test)
     train_percent = 1  # (train)/(train+val)
 
     # 修改类别
-    classes = ["crack", "lime", "rebar", "spall"]  #修改为自己的类别,多个类["class1","class2"]
+    classes = ["crack", "lime", "rebar", "spall"]  #修改为自己的类别,多个类["class1","class2"]（要改）
 
-    dir_label = r".\voc_labels"
+    dir_label = r".\voc_labels" # 要改
 
     dir1_train = r".\images\train2014"
     dir1_val = r".\images\val2014"
     dir2_train = r".\labels\train2014"
     dir2_val = r".\labels\val2014"
 
-    main_trainval = r".\ImageSets\Main\trainval.txt"
-    main_test = r".\ImageSets\Main\test.txt"
+    main_trainval = r".\ImageSets\Main\trainval.txt" #（要改）
+    main_test = r".\ImageSets\Main\test.txt" #（要改）
     
     ##################################################################################
 
